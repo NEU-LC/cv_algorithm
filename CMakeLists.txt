@@ -20,7 +20,6 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -fsee -fomit-frame-pointer -fno-sign
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g3 -Wall -Wuninitialized -Wmaybe-uninitialized")
 
 option(myMVG_BUILD_SHARED "Build My CV shared libs" ON)
-option(myMVG_BUILD_EXAMPLES "Build My CV samples applications." OFF)
 option(myMVG_BUILD_TYPE "Build My CV as Debug." OFF)
 
 # Set Build Path
@@ -32,8 +31,8 @@ else()
     message("CMAKE_BUILD_TYPE:${CMAKE_BUILD_TYPE}")
 endif(myMVG_BUILD_TYPE)
 
-set(EXECUTABLE_OUTPUT_PATH "${PROJECT_BINARY_DIR}/bin")
-set(LIBRARY_OUTPUT_PATH "${PROJECT_BINARY_DIR}/lib")
+set(EXECUTABLE_OUTPUT_PATH "${PROJECT_SOURCE_DIR}/bin")
+set(LIBRARY_OUTPUT_PATH "${PROJECT_SOURCE_DIR}/lib")
 
 # Set shared or static mode
 if (myMVG_BUILD_SHARED)
@@ -50,6 +49,7 @@ find_package(Boost REQUIRED COMPONENTS system filesystem thread date_time)
 
 # Include our header files
 include_directories(
+        src
         ${EIGEN3_INCLUDE_DIR}
         ${Boost_INCLUDE_DIRS}
 )
@@ -59,8 +59,6 @@ list(APPEND thirdparty_libraries
         ${OpenCV_LIBRARIES}
 )
 
-if(myMVG_BUILD_EXAMPLES)
-    add_subdirectory(test)
-endif()
 
 add_subdirectory(src)
+add_subdirectory(test)
