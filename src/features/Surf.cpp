@@ -8,7 +8,7 @@ namespace MCV{
         if(img.channels() == 3)
             cv::cvtColor(img, img, cv::COLOR_BGR2GRAY);
 
-        cv::Ptr<cv::xfeatures2d::SURF> surfPtr = cv::xfeatures2d::SURF::create(1000);
+        cv::Ptr<cv::xfeatures2d::SURF> surfPtr = cv::xfeatures2d::SURF::create(800);
         surfPtr -> detect(img, keypoints);
     }
 
@@ -18,7 +18,7 @@ namespace MCV{
         cv::Mat img  = src.getMat();
         cv::cvtColor(img, img, cv::COLOR_BGR2GRAY);
 
-        cv::Ptr<cv::xfeatures2d::SURF> surfPtr = cv::xfeatures2d::SURF::create(1000);
+        cv::Ptr<cv::xfeatures2d::SURF> surfPtr = cv::xfeatures2d::SURF::create(800);
         surfPtr -> detectAndCompute(img, cv::Mat(), keypoints, des);
     }
 

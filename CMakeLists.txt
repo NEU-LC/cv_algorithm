@@ -47,16 +47,20 @@ find_package(Eigen3 REQUIRED)
 find_package(OpenCV 3 REQUIRED)
 find_package(Boost REQUIRED COMPONENTS system filesystem thread date_time)
 
+set(SIFTGPU_INCLUDE "/home/chao/ThirdParty/SiftGPU/src/SiftGPU")
+set(SIFTGPU_LIBS "/home/chao/ThirdParty/SiftGPU/bin/libsiftgpu.so")
 # Include our header files
 include_directories(
         src
         ${EIGEN3_INCLUDE_DIR}
         ${Boost_INCLUDE_DIRS}
+        ${SIFTGPU_INCLUDE}
 )
 # Set link libraries used by all binaries
 list(APPEND thirdparty_libraries
         ${Boost_LIBRARIES}
         ${OpenCV_LIBRARIES}
+        ${SIFTGPU_LIBS}
 )
 
 
