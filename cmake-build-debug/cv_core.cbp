@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="cv_core"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\..\usr\local\share\eigen3\;CMake Files\..\..\..\..\..\usr\local\share\eigen3\cmake\;CMake Files\..\..\..\..\..\usr\local\share\OpenCV\;CMake Files\src\;CMake Files\test\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/chao/master/code/cv_algorithm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/chao/master/code/cv_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/chao/master/code/cv_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/chao/master/code/cv_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/chao/master/code/cv_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/chao/master/code/cv_algorithm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/chao/master/code/cv_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/chao/master/code/cv_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/chao/master/code/cv_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/chao/master/code/cv_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/chao/master/code/cv_algorithm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/chao/master/code/cv_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/chao/master/code/cv_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/chao/master/code/cv_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/chao/master/code/cv_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="myCV_lib">
+				<Option output="/home/chao/master/code/cv_algorithm/lib/libmyCV_lib.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/chao/master/code/cv_algorithm/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/chao/master/code/cv_algorithm/src"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/chao/ThirdParty/SiftGPU/src/SiftGPU"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/chao/master/code/cv_algorithm/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 myCV_lib"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/chao/master/code/cv_algorithm/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/chao/master/code/cv_algorithm/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/chao/master/code/cv_algorithm/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="myCV_lib/fast">
+				<Option output="/home/chao/master/code/cv_algorithm/lib/libmyCV_lib.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/chao/master/code/cv_algorithm/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/chao/master/code/cv_algorithm/src"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/chao/ThirdParty/SiftGPU/src/SiftGPU"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/chao/master/code/cv_algorithm/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 myCV_lib/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/chao/master/code/cv_algorithm/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/chao/master/code/cv_algorithm/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/chao/master/code/cv_algorithm/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_surf">
+				<Option output="/home/chao/master/code/cv_algorithm/bin/test_surf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/chao/master/code/cv_algorithm/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/chao/master/code/cv_algorithm/src"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/chao/ThirdParty/SiftGPU/src/SiftGPU"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/chao/master/code/cv_algorithm/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test_surf"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/chao/master/code/cv_algorithm/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/chao/master/code/cv_algorithm/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/chao/master/code/cv_algorithm/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_surf/fast">
+				<Option output="/home/chao/master/code/cv_algorithm/bin/test_surf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/chao/master/code/cv_algorithm/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/chao/master/code/cv_algorithm/src"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/home/chao/ThirdParty/SiftGPU/src/SiftGPU"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/chao/master/code/cv_algorithm/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test_surf/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/chao/master/code/cv_algorithm/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/chao/master/code/cv_algorithm/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/chao/master/code/cv_algorithm/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/chao/master/code/cv_algorithm/src/features/Sift.cpp">
+			<Option target="myCV_lib"/>
+		</Unit>
+		<Unit filename="/home/chao/master/code/cv_algorithm/src/features/Sift.h">
+			<Option target="myCV_lib"/>
+		</Unit>
+		<Unit filename="/home/chao/master/code/cv_algorithm/src/features/Surf.cpp">
+			<Option target="myCV_lib"/>
+		</Unit>
+		<Unit filename="/home/chao/master/code/cv_algorithm/src/features/Surf.h">
+			<Option target="myCV_lib"/>
+		</Unit>
+		<Unit filename="/home/chao/master/code/cv_algorithm/src/pnp/mcvPnP.cpp">
+			<Option target="myCV_lib"/>
+		</Unit>
+		<Unit filename="/home/chao/master/code/cv_algorithm/src/pnp/mcvPnP.h">
+			<Option target="myCV_lib"/>
+		</Unit>
+		<Unit filename="/home/chao/master/code/cv_algorithm/src/triangulation/single_triangulation.cpp">
+			<Option target="myCV_lib"/>
+		</Unit>
+		<Unit filename="/home/chao/master/code/cv_algorithm/src/triangulation/single_triangulation.h">
+			<Option target="myCV_lib"/>
+		</Unit>
+		<Unit filename="/home/chao/master/code/cv_algorithm/test/surf_test.cpp">
+			<Option target="test_surf"/>
+		</Unit>
+		<Unit filename="/home/chao/master/code/cv_algorithm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/chao/master/code/cv_algorithm/../../../../../usr/local/share/eigen3/cmake/Eigen3Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\eigen3\cmake\"/>
+		</Unit>
+		<Unit filename="/home/chao/master/code/cv_algorithm/../../../../../usr/local/share/eigen3/cmake/Eigen3ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\eigen3\cmake\"/>
+		</Unit>
+		<Unit filename="/home/chao/master/code/cv_algorithm/../../../../../usr/local/share/eigen3/cmake/Eigen3Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\eigen3\cmake\"/>
+		</Unit>
+		<Unit filename="/home/chao/master/code/cv_algorithm/../../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/chao/master/code/cv_algorithm/../../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/chao/master/code/cv_algorithm/../../../../../usr/local/share/OpenCV/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/chao/master/code/cv_algorithm/../../../../../usr/local/share/OpenCV/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/chao/master/code/cv_algorithm/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="/home/chao/master/code/cv_algorithm/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
